@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fuzzy String Searching"
+title: "Fuzzy Searching"
 description: ""
 category: programming
 tags: [search, algorithms, string searching, fuzzy searching, levenshtein]
