@@ -7,7 +7,7 @@ tags: [spellcheck, latex, texworks, british english, en-GB]
 ---
 {% include JB/setup %}
 
-TeXworks is great, but it's even better when you enable the inbuilt spellchecking. It was suggested that I post this step-by-step in the hopes that it helps anyone else trying to enable the en-GB dictionary for their spellchecker.
+TeXworks is great, but it's even better when you enable the in-built spellchecking. It was suggested that I post this step-by-step in the hopes that it helps anyone else trying to enable the en-GB dictionary for their spellchecker.
 
 First, you'll need to find a `.dic` file and a `.aff` file for download. These can be found anywhere, but I swiped mine from (Mozilla's Thunderbird Extensions library)[http://dictionaries.mozdev.org/installation.html]. I've rehosted it <a href="/files/spell-en-GB.zip">here</a> for convenience.
 
