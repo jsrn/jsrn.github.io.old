@@ -19,7 +19,7 @@ If you choose to download from the Thunderbird Extensions library, follow these 
  4. You will find a folder called spell-en-GB.xpi
  5. Change the file extension to .zip
 
-Now that you have the zip file, locate your Texworks folder. It should be in `C:\Documents and Settings\Your Name\` by default. Within this folder, create a folder called "dictionaries" and extract `en-GB.dic` and `en-GB.aff` to it.
+Now that you have the zip file, locate your Texworks folder. It should be in `C:\\Documents and Settings\\Your Name\\` by default. Within this folder, create a folder called "dictionaries" and extract `en-GB.dic` and `en-GB.aff` to it.
 
 To enable the dictionary:
 
