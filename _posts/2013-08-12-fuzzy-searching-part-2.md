@@ -38,8 +38,28 @@ These are some pretty good results, But we can see that the Demarau-Levenshtein 
 
 This is obviously not optimal. If we start a seach with "c", we are obviously not looking for "lehi". These results come first in the rankings simply because there are fewer steps between them, not because it's likely to be what we're looking for. Perhaps we can add additional weighting to those results in the set of which the search term is a substring.
 
-*To be continued.*
-	
+To attempt to do this, I changed two things:
+
+ 1. **Increased the cost of substitution from 1 to 2.** This should help to prevent shorter words from being a closer match just because it would be easier to substitute every letter than it would be to increase the length of the word.
+ 2. **Reduced the cost of insertion to 0.** This makes it is inexpensive to increase word length, giving increased importance to substring matches.
+
+Now to look at how that turned out:
+
+	Searching for term 'casro' in a list of 101 words.
+	Before:         After:
+	casino  [2]     casinoroyale  [0]
+	mani    [4]     casino        [1]
+	alvera  [5]     ashlaring     [2]
+	bailey  [5]     carpetbag     [2]
+
+Much better. We can throw in substrings, and so long as they're in the right order, they'll give us a good answer. We get close to typing in the full word, and we're almost guaranteed a the right answer.
+
+In the next post, I will look at including the modified Damarau-Levenshtein distance to allow for a good result when:
+
+ 1. The search string (S) contains multiple words
+ 2. The string being searched (T) against contains multiple words
+ 3. Both S and T contain multiple words
+
 ### Sources
 
 [Wikipedia: Damerau-Levenshtein Distance](http://en.wikipedia.org/wiki/Damerau-Levenshtein_distance)
