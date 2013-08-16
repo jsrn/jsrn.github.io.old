@@ -15,7 +15,7 @@ The first and most frequent type is a screenshot of someone saying something cle
 
 The second type of screenshot is the action shot. This generally features a bunch of people running about fighting, and centres on the player. These shots do not have to be cropped quite so tidily, and so we will focus on the first type for now.
 
-To get screenshots of interesting text, we need some way to detect when interesting text is present. Fortunately, the focus of this exercise, the online roleplaying game Ultima Online, has very uniform text. We should be able to detect it in screenshots fairly simply.
+To get screenshots of interesting text, we need some way to detect when such text is present. Fortunately, the focus of this exercise, online roleplaying game Ultima Online, has very uniform text. Unlike captchas, this text is never obscured or distorted. We should be able to detect it in screenshots fairly simply.
 
 **Things we know:**
 
@@ -39,5 +39,28 @@ If we hope to detect text in the screenshots, it is very useful to us that we kn
 For each pixel, and for each matrix, we simply check that all pixels corresponding to a 1 in the matrix are the same colour. If so, we can somewhat reliably assume that the letter is present. In order to build the matrices, I copied the letters from the font into the following template:
 
 <img src="/images/uoautocrop/letters.png">
+
+Since we're not (currently) trying to determine what the text is, only that it is present, it is not necessary for us to order our array of letter templates, or to know which template corresponds to which letter.
+
+{% highlight python %}
+letter_height = 17
+letter_width = 22
+rows, columns = 4, 20
+
+x, y = 1, 1
+matrices = {}
+for r in rows:
+	for c in columns:
+		matrix = [][]
+		for w in letter_width:
+			for h in letter_height:
+				if pix( w, h ) is black:
+					matrix[w][h] = 1
+				else:
+					matrix[w][h] = 0
+		matrices.append( matrix )
+{% endhighlight %}
+
+The end result is that we now have a complete list of matrices representing each letter template.
 
 *To be continued.*
