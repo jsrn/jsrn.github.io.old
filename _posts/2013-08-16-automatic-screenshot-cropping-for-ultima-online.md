@@ -61,6 +61,29 @@ for r in rows:
 		matrices.append( matrix )
 {% endhighlight %}
 
-The end result is that we now have a complete list of matrices representing each letter template.
+The end result is that we now have a complete list of matrices representing each letter template. Now we can start looking for text in our screenshot.
+
+{% highlight python %}
+texts = []
+for y in pic:
+	for x in pic:
+		for matrix in matrices:
+			if is_present( matrix, x, y ):
+				texts.append( (x,y) )
+{% endhighlight %}
+
+The advantage of knowing that each pixel should be is that we don't need to check each pixel. We can duck out at the first failure. On average, we should be able to rule out the presence of a letter within the first two rows, or 44 pixels.
+
+{% highlight python %}
+def matrix_is_present( matrix, x, y ):
+	found = None
+	for ( x, y ) in matrix:
+		if matrix( x, y ) = 1:
+			if found == False:
+				found = colours( x, y )
+			else if colours( x, y ) != found:
+				return False
+	return True
+{% endhighlight %}
 
 *To be continued.*
