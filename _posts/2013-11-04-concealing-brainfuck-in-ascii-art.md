@@ -148,6 +148,8 @@ Output:
 	                                  ~~#####~~                       
 	                                      ~     Sean Gugler
 
+And to test it:
+
 	 ~/Programming/brainfuck  $ beef hidden.bf 
 	Hello World!
 
