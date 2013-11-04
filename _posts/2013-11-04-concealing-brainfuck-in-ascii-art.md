@@ -153,4 +153,4 @@ And to test it:
 	 ~/Programming/brainfuck  $ beef hidden.bf 
 	Hello World!
 
-Now that is some truly unreadable code. As an extension, it would be good to spread the BF chars throughout the piece, rather than stick them all at the beginning.
+Now that is some truly unreadable code. As an extension, it would be good to spread the BF chars throughout the piece rather than sticking them all at the beginning.
