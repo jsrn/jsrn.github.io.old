@@ -46,5 +46,4 @@ Model the spread of disease through a randomly generated population. \[Javascrip
 
 ### Other Pages
 
-[My Gists](https://gist.github.com/jsrn)  /
-[My GitHub](http://github.com/jsrn)
+[My Gists](https://gist.github.com/jsrn)
