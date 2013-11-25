@@ -43,7 +43,3 @@ Model the spread of disease through a randomly generated population. \[Javascrip
 {% endcapture %}
 {{ recentposts | markdownify }}
 </div>
-
-### Other Pages
-
-[My Gists](https://gist.github.com/jsrn)
