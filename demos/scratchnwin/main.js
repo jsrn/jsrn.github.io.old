@@ -7,8 +7,8 @@ ctx.fillRect (0, 0, 500, 300);
 ctx.lineWidth = 3;
 ctx.lineJoin = ctx.lineCap = 'round';
 ctx.lineWidth = 'purple';
-ctx.globalCompositeOperation = "copy";
-ctx.strokeStyle = "rgba(0,0,0,0)";
+ctx.globalCompositeOperation = "destination-out";
+ctx.strokeStyle = "rgba(255,255,255,1.0)";
 
 var isDrawing, lastPoint;
 
