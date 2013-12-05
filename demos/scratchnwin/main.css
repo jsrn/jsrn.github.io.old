@@ -1,0 +1,17 @@
+body { background-color: #CB9458; }
+
+canvas {
+	border: 1px solid #ccc;
+	border: solid black 1px;
+	position: absolute;
+	top: 49;
+	left: 49;
+	z-index: 2;
+}
+
+img {
+	position: absolute;
+	top: 50;
+	left: 50;
+	z-index: 1;
+}
