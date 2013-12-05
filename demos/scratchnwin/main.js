@@ -1,3 +1,6 @@
+// Canvas drawing code/inspiration from
+// http://perfectionkills.com/exploring-canvas-drawing-techniques/
+
 var el = document.getElementById('c');
 var ctx = el.getContext('2d');
 
@@ -6,7 +9,6 @@ ctx.fillRect (0, 0, 500, 300);
 
 ctx.lineWidth = 3;
 ctx.lineJoin = ctx.lineCap = 'round';
-ctx.lineWidth = 'purple';
 ctx.globalCompositeOperation = "destination-out";
 ctx.strokeStyle = "rgba(255,255,255,1.0)";
 
@@ -22,7 +24,6 @@ el.onmousemove = function(e) {
 
   ctx.beginPath();
   
-  //ctx.globalAlpha = 1;
   ctx.moveTo(lastPoint.x, lastPoint.y);
   ctx.lineTo(e.clientX, e.clientY);
   ctx.stroke();
