@@ -1,5 +1,8 @@
-String.prototype.replaceAt=function(index, character) {
-	return this.substr(0, index) + character + this.substr(index+character.length);
+String.prototype.replaceAt = function( index, character )
+{
+	return this.substr( 0, index )
+		+ character
+		+ this.substr( index + character.length );
 }
 
 chars = "ABCDEFGHIJKLMNOPQRSTUVQXYZabcdefghijklmnopqrstuvqxyz0123456789"
@@ -24,7 +27,7 @@ hashIndices = [
 	872,873,874,875,876,877,924,925,926,927,928,929,930,931,932,933,934,935,985,
 	986,987,988,989,990,991,992,993,994,1047,1048,1049,1050,1051,1052,1109,1110
 	];
-	
+
 count = 0;
 
 function getBlock()
