@@ -52,12 +52,9 @@ function getBackgroundBlock()
 {
 	var block = ""
 
-	for(var i = 0; i < 20; i++)
+	for(var i = 0; i < 20 * 60; i++)
 	{
-		for(var j = 0; j < 60; j++)
-		{
-			block += chars.charAt(Math.floor(Math.random() * chars.length));;
-		}
+		block += chars.charAt(Math.floor(Math.random() * chars.length));;
 	}
 
 	return block;
