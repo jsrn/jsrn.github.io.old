@@ -68,6 +68,9 @@ function overlayHashes( block )
 	for(var i = 0; i < hashIndices.length; i++)
 	{
 		var chance = count / hashIndices.length;
+		var modifier = 2;
+		chance *= modifier;
+
 		if( Math.random() < chance )
 		{
 			var ind = hashIndices[i];
