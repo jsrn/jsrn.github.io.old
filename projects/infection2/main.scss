@@ -11,21 +11,18 @@ a
 	color: inherit;
 }
 
-header
-{
+header {
 	font-family: 'Nosifer', cursive;
 	width: 100%;
 	text-align: center;
-}
 
-header h1
-{
-	 margin-bottom: 0;
-}
+	h1 {
+		margin-bottom: 0;
+	}
 
-header a
-{
-	 text-decoration: none;
+	a {
+		text-decoration: none;
+	}
 }
 
 canvas
