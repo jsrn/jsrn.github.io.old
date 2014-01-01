@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Nosifer);
+
+html
+{
+	background-color: #752222;
+	font-family: sans-serif;
+}
+
+a
+{
+	color: inherit;
+}
+
+header
+{
+	font-family: 'Nosifer', cursive;
+	width: 100%;
+	text-align: center;
+}
+
+header h1
+{
+	 margin-bottom: 0;
+}
+
+header a
+{
+	 text-decoration: none;
+}
+
+canvas
+{
+	border: solid black 1px;
+}
+
+#controls
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#canvas-frame
+{
+	width: 100%;
+	text-align: center;
+}
