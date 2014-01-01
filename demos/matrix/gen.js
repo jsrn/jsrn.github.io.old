@@ -57,6 +57,10 @@ function overlayHashes( block )
 		var chance = count / hashIndices.length;
 		var modifier = 2;
 		chance *= modifier;
+		if( chance > 0.98 )
+		{
+			chance = 0.98;
+		}
 
 		if( Math.random() < chance )
 		{
