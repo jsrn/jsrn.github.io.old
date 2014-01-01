@@ -28,9 +28,22 @@ header {
 		width: 700px;
 		margin: 0 auto;
 		list-style: none;
+		height: 25px;
 
 		li {
 			float: left;
+			height: 25px;
+			line-height: 25px;
+			padding-left: 20px;
+			padding-right: 20px;	
+		}
+
+		li:first-child {
+			padding-left: 0;
+		}
+
+		li:last-child {
+			padding-right: 0;
 		}
 	}
 }
