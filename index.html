@@ -3,11 +3,10 @@ layout: page
 ---
 {% include JB/setup %}
 
-<div style="float: left; width: 60%;">
 <div id="post_container">
   {% for post in paginator.posts %}
     <div class="post">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <p class="author">
         <span class="date">{{ post.date | date: "%d %b, %Y" }}</span>
       </p>
@@ -31,18 +30,4 @@ layout: page
     <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
     {% endif %} 
   </nav>
-</div>
-</div>
-
-<div style="float: left; width: 40%;">
-<h3>Recent Posts</h3>
-
-{% capture recentposts %}
-*These are the seven most recent posts. You can browse through the whole lot in the <a href="{{ BASE_PATH }}categories.html">category list</a> or <a href="{{ BASE_PATH }}archive.html">archive</a>.*
-
-{% for post in site.posts limit: 7 %}
-  {{ post.date | date_to_string }} >> [{{post.title}}]({{ BASE_PATH }}{{ post.url }})  
-{% endfor %}
-{% endcapture %}
-{{ recentposts | markdownify }}
 </div>

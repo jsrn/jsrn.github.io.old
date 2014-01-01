@@ -149,3 +149,32 @@ header span
 {
   color: inherit;
 }
+
+#post_container div.post
+{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#post_container div.post:last-child
+{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post h1
+{
+  text-align: center;
+}
+
+.post h1 a
+{
+  color: inherit;
+}
+
+.post .author
+{
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
