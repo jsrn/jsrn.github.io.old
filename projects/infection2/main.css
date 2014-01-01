@@ -28,12 +28,6 @@ header a
 	 text-decoration: none;
 }
 
-#content
-{
-	width: 1000px;
-	margin: 0 auto;
-}
-
 canvas
 {
 	border: solid black 1px;
@@ -41,9 +35,13 @@ canvas
 
 #controls
 {
-	width: 290px;
-	float: right;
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
+}
+
+#canvas-frame
+{
+	width: 100%;
+	text-align: center;
 }
