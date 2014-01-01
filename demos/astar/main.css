@@ -1,0 +1,37 @@
+html {
+	font-family: monospace;
+	background-color: #3996BA;
+	color: #1B2952;
+}
+
+#block {
+	margin-top: 30px;
+	text-align: center;
+	width: 500px;
+	margin: 30px auto 0 auto;
+	font-size: 1.5em;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+#block tr
+{
+	height: 25px;
+	padding: 0;
+	margin: 0;
+}
+
+#block td
+{
+	border: solid #1A3264 1px;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin: 0;
+}
+
+#block td:hover
+{
+	background-color: #3B4283;
+	cursor: pointer;
+}
