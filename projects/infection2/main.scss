@@ -1,13 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Nosifer);
 
-html
-{
+html {
 	background-color: #752222;
 	font-family: sans-serif;
 }
 
-a
-{
+a {
 	color: inherit;
 }
 
@@ -25,20 +23,26 @@ header {
 	}
 }
 
-canvas
-{
+#control-bar {
+	width: 100%;
+	overflow: hidden;
+
+	#control-list {
+		width: 700px;
+		margin: 0 auto;
+		list-style: none;
+
+		li {
+			float: left;
+		}
+	}
+}
+
+canvas {
 	border: solid black 1px;
 }
 
-#controls
-{
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-}
-
-#canvas-frame
-{
+#canvas-frame {
 	width: 100%;
 	text-align: center;
 }
