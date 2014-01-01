@@ -35,11 +35,11 @@ header {
 	}
 }
 
-canvas {
-	border: solid black 1px;
-}
-
 #canvas-frame {
 	width: 100%;
 	text-align: center;
+
+	canvas {
+		border: solid black 1px;
+	}
 }
