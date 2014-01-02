@@ -105,8 +105,9 @@ body {
   width: 600px;
   margin: 0 auto;
   position: relative; }
+  #computer > div {
+    position: absolute; }
   #computer #front {
-    position: absolute;
     width: 100px;
     top: 54px;
     width: 300px;
@@ -115,7 +116,6 @@ body {
     transform: skew(-10deg, 10deg);
     background-color: #A39A9A; }
   #computer #screen {
-    position: absolute;
     top: 70px;
     left: 20px;
     width: 270px;
@@ -125,7 +125,6 @@ body {
     -webkit-transform: skew(-10deg, 10deg);
     transform: skew(-10deg, 10deg); }
   #computer #text {
-    position: absolute;
     padding: 5px;
     font-size: 12pt;
     top: 80px;
@@ -157,7 +156,6 @@ body {
     animation: type_four 10s linear infinite;
     overflow: hidden; }
   #computer #side {
-    position: absolute;
     height: 300px;
     width: 90px;
     background-color: #333;
@@ -166,10 +164,16 @@ body {
     -webkit-transform: skew(-10deg, -30deg);
     transform: skew(-10deg, -30deg); }
   #computer #top {
-    position: absolute;
     background-color: #797979;
     width: 300px;
     height: 54px;
     left: 72px;
     -webkit-transform: skew(-60deg, 10deg);
     transform: skew(-60deg, 10deg); }
+  #computer #button {
+    -webkit-transform: skew(-10deg, 10deg);
+    transform: skew(-10deg, 10deg);
+    background-color: #242F45;
+    height: 20px;
+    width: 40px;
+    top: 260px; }
