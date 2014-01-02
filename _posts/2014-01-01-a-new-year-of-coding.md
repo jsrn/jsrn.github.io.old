@@ -8,7 +8,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-Some time this year, I realised that my progress as a developer was stagnating. Rather than settle for coasting, maintaining my current skill level, and doing "okay" at my job, I have resolved to make the transition from being an adequate developer to being a <strike>good</strike> slightly more adequate developer.
+Some time this year, I realised that my progress as a developer was stagnating. Rather than settle for coasting, maintaining my current skill level, and doing "okay" at my job, I resolved to make the transition from being an adequate developer to being a <strike>good</strike> slightly more adequate developer.
 
 Since making the decision to bring myself up to speed with the latest and greatest of web development, I have felt... worse. It seems like there are so many tools, languages, and frameworks that you need to know to be considered a "competent" web developer. It's all a bit much!
 
