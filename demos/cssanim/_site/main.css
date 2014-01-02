@@ -1,0 +1,135 @@
+@keyframes rainbow {
+  0% {
+    background-color: #FF0000; }
+
+  10% {
+    background-color: #FF8000; }
+
+  20% {
+    background-color: #FFFF00; }
+
+  30% {
+    background-color: #80FF00; }
+
+  40% {
+    background-color: #00FF00; }
+
+  50% {
+    background-color: #00FF80; }
+
+  60% {
+    background-color: #00FFFF; }
+
+  70% {
+    background-color: #0080FF; }
+
+  80% {
+    background-color: #0000FF; }
+
+  90% {
+    background-color: #8000FF; }
+
+  100% {
+    background-color: #FF0080; } }
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-color: #FF0000; }
+
+  10% {
+    background-color: #FF8000; }
+
+  20% {
+    background-color: #FFFF00; }
+
+  30% {
+    background-color: #80FF00; }
+
+  40% {
+    background-color: #00FF00; }
+
+  50% {
+    background-color: #00FF80; }
+
+  60% {
+    background-color: #00FFFF; }
+
+  70% {
+    background-color: #0080FF; }
+
+  80% {
+    background-color: #0000FF; }
+
+  90% {
+    background-color: #8000FF; }
+
+  100% {
+    background-color: #FF0080; } }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+body {
+  background-color: #2D6476; }
+
+#demos {
+  width: 100%; }
+  #demos > div {
+    position: absolute;
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    background-color: #152DA1; }
+  #demos #rainbowDiv {
+    top: 30px;
+    left: 10px;
+    -webkit-animation: rainbow 6s linear infinite;
+    -moz-animation: rainbow 6s linear infinite;
+    animation: rainbow 6s linear infinite; }
+  #demos #rotateDiv {
+    top: 30px;
+    left: 150px;
+    display: inline-block;
+    -webkit-animation: rotate 6s linear infinite;
+    -moz-animation: rotate 6s linear infinite;
+    animation: rotate 6s linear infinite; }
+  #demos #computerDiv {
+    top: 30px;
+    left: 290px;
+    -webkit-transform: skew(-10deg, 10deg);
+    transform: skew(-10deg, 10deg);
+    border-width: 0;
+    background-color: #A39A9A;
+    box-shadow: black 3px 3px 12px;
+    z-index: 2; }
+    #demos #computerDiv #screen {
+      position: relative;
+      top: 5px;
+      left: 5px;
+      width: 88px;
+      height: 65px;
+      border-radius: 3px;
+      background-color: black;
+      z-index: 3; }
+    #demos #computerDiv #side {
+      position: relative;
+      height: 100px;
+      width: 30px;
+      background-color: #797979;
+      top: -70px;
+      left: 100px;
+      -webkit-transform: skew(0deg, -20deg);
+      transform: skew(0deg, -20deg);
+      box-shadow: black 3px 3px 12px;
+      z-index: 1; }
