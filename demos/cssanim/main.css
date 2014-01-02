@@ -82,17 +82,17 @@
 
 @keyframes type {
   0% {
-    transform: rotate(0deg); }
+    width: 0px; }
 
   100% {
-    transform: rotate(360deg); } }
+    width: 89px; } }
 
 @-webkit-keyframes type {
   0% {
-    -webkit-transform: rotate(0deg); }
+    width: 0px; }
 
   100% {
-    content: "test"; } }
+    width: 89px; } }
 
 body {
   background-color: #2D6476; }
@@ -144,7 +144,7 @@ body {
       transform: skew(-10deg, 10deg); }
     #demos #computerDiv #text {
       position: inherit;
-      padding: 2px;
+      padding: 5px;
       font-size: 10px;
       top: 35px;
       left: 5px;
@@ -153,10 +153,31 @@ body {
       height: 65px;
       -webkit-transform: skew(-10deg, 10deg);
       transform: skew(-10deg, 10deg);
-      font-family: monospace;
-      -webkit-animation: type 6s linear infinite;
-      -moz-animation: type 6s linear infinite;
-      animation: type 6s linear infinite; }
+      font-family: monospace; }
+    #demos #computerDiv #text div {
+      width: 0px; }
+    #demos #computerDiv #text div:nth-child(1) {
+      -webkit-animation: type 3s linear infinite;
+      animation: type 3s linear infinite;
+      overflow: hidden; }
+    #demos #computerDiv #text div:nth-child(2) {
+      -webkit-animation: type 3s linear infinite;
+      -webkit-animation-delay: 3.5s;
+      animation: type 3s linear infinite;
+      animation-delay: 3.5s;
+      overflow: hidden; }
+    #demos #computerDiv #text div:nth-child(3) {
+      -webkit-animation: type 3s linear infinite;
+      -webkit-animation-delay: 7s;
+      animation: type 3s linear infinite;
+      animation-delay: 7s;
+      overflow: hidden; }
+    #demos #computerDiv #text div:nth-child(4) {
+      -webkit-animation: type 3s linear infinite;
+      -webkit-animation-delay: 10.5s;
+      animation: type 3s linear infinite;
+      animation-delay: 10.5s;
+      overflow: hidden; }
     #demos #computerDiv #side {
       position: inherit;
       height: 100px;
