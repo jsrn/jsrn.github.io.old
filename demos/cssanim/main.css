@@ -80,6 +80,20 @@
   100% {
     -webkit-transform: rotate(360deg); } }
 
+@keyframes type {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes type {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    content: "test"; } }
+
 body {
   background-color: #2D6476; }
 
@@ -137,11 +151,12 @@ body {
       width: 89px;
       color: white;
       height: 65px;
-      border-radius: 3px;
-      background-color: black;
       -webkit-transform: skew(-10deg, 10deg);
       transform: skew(-10deg, 10deg);
-      font-family: monospace; }
+      font-family: monospace;
+      -webkit-animation: type 6s linear infinite;
+      -moz-animation: type 6s linear infinite;
+      animation: type 6s linear infinite; }
     #demos #computerDiv #side {
       position: inherit;
       height: 100px;
