@@ -140,7 +140,8 @@ body {
       border-radius: 3px;
       background-color: black;
       -webkit-transform: skew(-10deg, 10deg);
-      transform: skew(-10deg, 10deg); }
+      transform: skew(-10deg, 10deg);
+      font-family: monospace; }
     #demos #computerDiv #side {
       position: inherit;
       height: 100px;
