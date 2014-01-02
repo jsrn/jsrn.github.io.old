@@ -12,41 +12,43 @@
 
 @keyframes type_two {
 	0% { width: 0px; }
-	40% { width: 0px; }
-	60% { width: 100%; }
+	20% { width: 0px; }
+	40% { width: 100%; }
 	100% { width: 300px; }
 }
 
 @-webkit-keyframes type_two {
 	0% { width: 0px; }
-	40% { width: 0px; }
-	60% { width: 100%; }
+	20% { width: 0px; }
+	40% { width: 100%; }
 	100% { width: 300px; }
 }
 
 @keyframes type_three {
 	0% { width: 0px; }
-	60% { width: 0px; }
-	80% { width: 100%; }
+	40% { width: 0px; }
+	60% { width: 100%; }
 	100% { width: 300px; }
 }
 
 @-webkit-keyframes type_three {
 	0% { width: 0px; }
-	60% { width: 0px; }
-	80% { width: 100%; }
+	40% { width: 0px; }
+	60% { width: 100%; }
 	100% { width: 300px; }
 }
 
 @keyframes type_four {
 	0% { width: 0px; }
-	80% { width: 0px; }
+	60% { width: 0px; }
+	80% { width: 300px; }
 	100% { width: 300px; }
 }
 
 @-webkit-keyframes type_four {
 	0% { width: 0px; }
-	80% { width: 0px; }
+	60% { width: 0px; }
+	80% { width: 300px; }
 	100% { width: 300px; }
 }
 
