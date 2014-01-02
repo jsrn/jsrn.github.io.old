@@ -25,6 +25,9 @@
   40% {
     width: 0px; }
 
+  60% {
+    width: 100%; }
+
   100% {
     width: 300px; } }
 
@@ -34,6 +37,9 @@
 
   40% {
     width: 0px; }
+
+  60% {
+    width: 100%; }
 
   100% {
     width: 300px; } }
@@ -45,6 +51,9 @@
   60% {
     width: 0px; }
 
+  80% {
+    width: 100%; }
+
   100% {
     width: 300px; } }
 
@@ -54,6 +63,9 @@
 
   60% {
     width: 0px; }
+
+  80% {
+    width: 100%; }
 
   100% {
     width: 300px; } }
@@ -119,22 +131,24 @@ body {
     transform: skew(-10deg, 10deg);
     font-family: monospace; }
   #computer #text div {
-    width: 0px; }
+    width: 0px;
+    overflow: hidden;
+    max-height: 19px; }
   #computer #text div:nth-child(1) {
-    -webkit-animation: type 5s linear infinite;
-    animation: type 5s linear infinite;
+    -webkit-animation: type 10s linear infinite;
+    animation: type 10s linear infinite;
     overflow: hidden; }
   #computer #text div:nth-child(2) {
-    -webkit-animation: type_two 5s linear infinite;
-    animation: type_two 5s linear infinite;
+    -webkit-animation: type_two 10s linear infinite;
+    animation: type_two 10s linear infinite;
     overflow: hidden; }
   #computer #text div:nth-child(3) {
-    -webkit-animation: type_three 5s linear infinite;
-    animation: type_three 5s linear infinite;
+    -webkit-animation: type_three 10s linear infinite;
+    animation: type_three 10s linear infinite;
     overflow: hidden; }
   #computer #text div:nth-child(4) {
-    -webkit-animation: type_four 5s linear infinite;
-    animation: type_four 5s linear infinite;
+    -webkit-animation: type_four 10s linear infinite;
+    animation: type_four 10s linear infinite;
     overflow: hidden; }
   #computer #side {
     position: absolute;
