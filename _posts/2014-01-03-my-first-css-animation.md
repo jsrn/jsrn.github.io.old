@@ -12,7 +12,6 @@ In my last post, I expressed an intent to learn how to perform animations with C
 <a href="/demos/cssanim/computer.html" target="_blank">
 	<img src="/images/computer-animation.png">
 </a>
-<br>
 <i>(Click for demo.)</i>
 
 Can only go up from here!
