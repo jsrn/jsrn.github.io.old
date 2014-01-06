@@ -1,0 +1,23 @@
+body {
+	padding: 5px;
+	text-align: center;
+}
+
+h1 {
+	clear: both;
+}
+
+form {
+	width: 400px;
+	float: left;
+}
+
+.aligned-form {
+	margin-left: 10px;
+}
+
+#forms {
+	width: 810px;
+	margin: 0 auto;
+	overflow: hidden;
+}

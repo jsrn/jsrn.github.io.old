@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Common.css</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+	<h1>Common.css</h1>
+
+	<p>
+		Common.css is a set of style rules built on top of normalize.css to unify the common functionality that I find myself implementing from project to project.
+	</p>
+
+	<h1 id="menus-anchor">Menus</h1>
+
+	<ul id="common-menu">
+		<li>
+			<a href="#menus-anchor">Menus</a>
+		</li>
+
+		<li>
+			<a href="#forms-anchor">Forms</a>
+		</li>
+
+		<li>
+			<a href="#">Dummy 1</a>
+		</li>
+
+		<li>
+			<a href="#">Dummy 2</a>
+		</li>
+	</ul>
+
+	<h1 id="forms-anchor">Forms</h1>
+
+	<p>
+		The two form styles I use the most are the stacked style and the aligned style. I've done CSS for both.
+	</p>
+
+	<section id="forms">
+		<form class="stacked-form">
+			<h2>Stacked Form</h2>
+
+			<label for="stacked_text_input">Text Input</label>
+			<input type="text" id="stacked_text_input" placeholder="Text Input">
+
+			<label for="stacked_short_select">Short Select</label>
+			<select id="stacked_short_select">
+				<option value="1">Test</option>
+				<option value="2">Test2</option>
+			</select>
+
+			<label for="stacked_tall_select">Tall Select</label>
+			<select size="2" id="stacked_tall_select">
+				<option value="1">Test</option>
+				<option value="2">Test2</option>
+			</select>
+
+			<label for="stacked_textarea">Text Area</label>
+			<textarea id="stacked_textarea" cols="30" rows="10"
+				placeholder="Text Area"></textarea>
+		</form>
+
+		<form class="aligned-form">
+			<h2>Aligned Form</h2>
+
+			<div>
+				<label for="aligned_text_input">Text Input</label>
+				<input type="text" id="aligned_text_input" placeholder="Text Input">	
+			</div>
+			
+			<div>
+				<label for="aligned_short_select">Short Select</label>
+				<select id="aligned_short_select">
+					<option value="1">Test</option>
+					<option value="2">Test2</option>
+				</select>
+			</div>
+			
+			<div>
+				<label for="aligned_tall_select">Tall Select</label>
+				<select size="2" id="aligned_tall_select">
+					<option value="1">Test</option>
+					<option value="2">Test2</option>
+				</select>
+			</div>
+			
+			<div>
+				<label for="aligned_textarea">Text Area</label>
+				<textarea id="aligned_textarea" cols="30" rows="10"
+					placeholder="Text Area"></textarea>	
+			</div>
+		</form>
+	</section>
+</body>
+</html>

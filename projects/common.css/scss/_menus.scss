@@ -1,0 +1,30 @@
+#common-menu {
+	list-style: none;
+	height: 35px;
+	background-color: #678AB5;
+	font-weight: 1.1em;
+	font-weight: bold;
+
+	li {
+		height: 35px;
+		float: left;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+			padding-left: 20px;
+			padding-right: 20px;
+			height: 35px;
+			line-height: 35px;
+			display: inline-block;
+
+			&:visited {
+				color: inherit;
+			}
+
+			&:hover {
+				background-color: #94B9D4;
+			}
+		}
+	}
+}
