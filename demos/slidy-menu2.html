@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slidy Menu</title>
+	<style>
+		body {
+		  background-color: #525980;
+		} 
+
+		@-webkit-keyframes expand {
+		  0% {}
+		  50% {
+		  	-webkit-transform: translate(200px,0px);
+		  	height: 50px;
+		  	width: 200px;
+		  }
+		  100% {
+		  	-webkit-transform: translate(200px,-50px);
+		  	height: 300px;
+		  	width: 400px;
+		  }
+		}
+
+		div {
+		  position: absolute;
+		  left: 10px;
+		  width: 200px;
+		  height: 50px;
+		}
+
+		#selected {
+		  top: 60px;
+		  background-color: #235;
+		  -webkit-animation: expand 0.5s linear 1;
+		  -webkit-animation-fill-mode: forwards; 
+		}
+
+		#block1 {
+		  top: 10px;
+		  background-color: #AB4343;
+		}
+
+		#block2 {
+		  top: 110px;
+		  background-color: green;
+		}
+
+		#block3 {
+		  top: 160px;
+		  background-color: #ffaa99;
+		}
+
+		#block4 {
+		  top: 210px;
+		  background-color: #333399;
+		}
+
+		#block5 {
+		  top: 260px;
+		  background-color: #339933;
+		}
+	</style>
+</head>
+<body>
+	<div id="block1"></div>
+	<div id="selected"></div>
+	<div id="block2"></div>
+	<div id="block3"></div>
+	<div id="block4"></div>
+	<div id="block5"></div>
+</body>
+</html>
