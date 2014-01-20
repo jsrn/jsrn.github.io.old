@@ -14,7 +14,7 @@ I was watching talks on YouTube while working, and ended up watching [CSS prepro
 {% highlight scss %}
 $base: #633;
 $complement1: adjust-hue($base, 180);
-$complement2: darken($base, 5%);
+$complement2: darken($complement1, 5%);
 $lighten1: lighten($base, 15%);
 $lighten2: lighten($base, 30%);
 {% endhighlight %}
