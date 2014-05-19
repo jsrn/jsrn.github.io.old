@@ -127,3 +127,4 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
   
 paginate: 3
+markdown: kramdown
