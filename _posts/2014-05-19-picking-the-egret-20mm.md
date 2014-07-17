@@ -2,7 +2,7 @@
 layout: post
 title: "Picking the EGRET 20mm"
 description: ""
-category: 
+category: miscellaneous
 tags: [lockpicking, EGRET, EGRET 20mm, more like regret]
 ---
 {% include JB/setup %}
