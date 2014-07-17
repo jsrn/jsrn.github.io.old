@@ -33,15 +33,31 @@
   </head>
 
   <body>
-    <header class="container-narrow">
-      <a href="{{ HOME_PATH }}">jsrn.net</a>
-      <span>digital notepad</span>
+    <header>
+      <div style="padding: 20px; width: calc(40% - 40px); float: left;">
+        <a href="{{ HOME_PATH }}">jsrn.net</a>
+        <span>digital notepad</span>
+      </div>
+
+      <div id="contactbox">
+        <ul>
+          <li>
+            <b>email</b> <i>contact at jsrn dot net</i>
+          </li>
+          <li>
+            <b>github</b> <i><a href="http://github.com/jsrn" target="_blank">@jsrn</a></i>
+          </li>
+          <li>
+            <b>PGP</b> <i><a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xDC632521B28EAADD">0xDC632521B28EAADD @ pgp.mit.edu</a></i>
+          </li>
+        </ul>
+      </div>
+      
     </header>
 
     <div class="navbar">
       <div class="container-narrow">
         <ul class="nav">
-          <li><a href="#" onclick="toggleContactBox()">Contact</a></li>
           <li><a href="/pages.html">Projects &amp; Demos</a></li>
           <li><a href="/archive.html">Post Archive</a></li>
           <li><a href="/categories.html">Posts by Category</a></li>
@@ -49,24 +65,7 @@
       </div>
     </div>
 
-    <div id="contactbox" style="display: none;">
-      <div class="container-narrow">
-        <ul>
-          <li>
-            <b>email:</b> <i>contact at jsrn dot net</i>
-          </li>
-          <li>
-            <b>github:</b> <i><a href="http://github.com/jsrn" target="_blank">@jsrn</a></i>
-          </li>
-          <li>
-            <b>PGP:</b> <i><a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xDC632521B28EAADD">0xDC632521B28EAADD @ pgp.mit.edu</a></i>
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <div class="container-narrow">
-
       <div class="content">
         {{ content }}
       </div>
@@ -81,13 +80,5 @@
       </footer>
 
     </div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">
-      function toggleContactBox()
-      {
-        $('#contactbox').slideToggle( 300 );
-      }
-    </script>
   </body>
 </html>
