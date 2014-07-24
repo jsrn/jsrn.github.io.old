@@ -194,3 +194,7 @@ header span
   margin: 5px;
   float: left;
 }
+
+figure {
+  text-align: center;
+}

@@ -21,4 +21,6 @@ $lighten2: lighten($base, 30%);
 
 With a snippet like this in your project, all you need to do is define your primary hue in `$base`, and you will have two complementary colours, and two lighter shades at your disposal.
 
-<img src="/images/swatches/swatches.png">
+<figure>
+	<img src="/images/swatches/swatches.png">
+</figure>
