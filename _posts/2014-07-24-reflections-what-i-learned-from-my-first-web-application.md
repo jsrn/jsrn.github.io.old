@@ -2,8 +2,8 @@
 layout: post
 title: "Reflections: What I learned from my first large web application"
 description: ""
-category: 
-tags: [programming]
+category: programming
+tags: [programming, web development]
 ---
 {% include JB/setup %}
 
