@@ -184,3 +184,13 @@ header span
   float: left;
   height: 150px;
 }
+
+.post .imagegrid {
+  overflow: hidden;
+}
+
+.post .imagegrid img {
+  height: 200px;
+  margin: 5px;
+  float: left;
+}
