@@ -160,18 +160,20 @@ header span
   padding-bottom: 0;
 }
 
-.post h1
-{
+.post h1 {
   text-align: center;
 }
 
-.post h1 a
-{
+.post h1 a {
   color: inherit;
 }
 
-.post .author
-{
+.post p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.post .author {
   text-align: center;
   font-family: 'Lora', serif;
   font-style: italic;
