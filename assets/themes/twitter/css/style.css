@@ -168,6 +168,10 @@ header span
   color: inherit;
 }
 
+.post h2, .post h3 {
+  margin-top: 20px;
+}
+
 .post p {
   font-size: 20px;
   line-height: 30px;
