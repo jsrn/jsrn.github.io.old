@@ -204,3 +204,23 @@ header span
 figure {
   text-align: center;
 }
+
+table {
+  font-size: 1.2em;
+  min-width: 300px;
+  border-bottom: solid 1px #999;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+table th {
+  text-align: left;
+}
+
+table thead {
+  border-bottom: solid 1px #999;
+}
+
+table th, table td {
+  padding: 4px 10px;
+}
