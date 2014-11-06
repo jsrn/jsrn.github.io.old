@@ -9,7 +9,7 @@ tags: [rails, activerecord, database, legacy issues, legacy database]
 
 The best thing about starting a project, apart from (hopefully) getting to make something awesome, is the lack of constraint. All the new tips and tricks you've picked up, all of the skills honed during your last project, can now be applied to a beautifully clean blank canvas, and the result, surely, will be a masterpiece.
 
-That's how I felt when I started my current project. It's a Ruby on Rails application that we're building to replace the company's existing desktop software. We're moving into the future!
+That's how I felt when I started my current project. It's a Ruby on Rails application that we're building to supplement and eventually replace the company's existing desktop software. We're moving into the future!
 
 _Nope._
 
