@@ -3,7 +3,7 @@ layout: post
 title: "My Green Field is Covered in Landmines"
 description: ""
 category: programming
-tags: []
+tags: [rails, activerecord, database, legacy issues, legacy database]
 ---
 {% include JB/setup %}
 
