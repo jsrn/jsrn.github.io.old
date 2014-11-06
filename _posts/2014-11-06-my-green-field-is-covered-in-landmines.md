@@ -13,11 +13,9 @@ That's how I felt when I started my current project. It's a Ruby on Rails applic
 
 _Nope._
 
-As it happens, the data from the web application has to be compatible with the desktop application. The desktop application is large and powerful, but it been designed, modified, grown and evolved over some 15 to 20 years. You can imagine what the database looks like.
+As it happens, the data from the web application has to be compatible with the desktop application. The desktop application is large and powerful, but it been designed, modified, grown and evolved over some 15 to 20 years. You can imagine what the database looks like to someone who wasn't there to experience and understand the history of it all.
 
-And now imagine that each user has their own database.
-
-And you can't change it without breaking the desktop version.
+And you can't make sweeping changes or refactor easily without breaking compatibility with the desktop.
 
 _Yeah._
 
