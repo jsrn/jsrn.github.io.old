@@ -30,32 +30,33 @@
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <div style="padding: 20px; width: calc(40% - 40px); float: left;">
+    <header class="container-narrow">
+      <div>
         <a href="{{ HOME_PATH }}">jsrn.net</a>
         <span>digital notepad</span>
       </div>
 
-      <div id="contactbox">
-        <ul>
-          <li>
-            <b>email</b> <i>contact at jsrn dot net</i>
-          </li>
-          <li>
-            <b>github</b> <i><a href="http://github.com/jsrn" target="_blank">@jsrn</a></i>
-          </li>
-          <li>
-            <b>codepen</b> <i><a href="http://codepen.io/jsrn" target="_blank">@jsrn</a></i>
-          </li>
-          <li>
-            <b>PGP</b> <i><a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xDC632521B28EAADD">0xDC632521B28EAADD @ pgp.mit.edu</a></i>
-          </li>
-        </ul>
+      <div id="contactbox" style="padding: 10px;">
+        <a href="mailto:contactATjsrnDOTnet" title="Mail">
+          <i class="fa fa-envelope fa-2x"></i>
+        </a>
+
+        <a href="http://github.com/jsrn" target="_blank" title="GitHub">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+
+        <a href="http://codepen.io/jsrn" target="_blank" title="CodePen">
+          <i class="fa fa-codepen fa-2x"></i>
+        </a>
+
+        <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xDC632521B28EAADD" target="_blank" title="PGP">
+          <i class="fa fa-lock fa-2x"></i>
+        </a>
       </div>
-      
     </header>
 
     <div class="navbar">

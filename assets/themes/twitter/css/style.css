@@ -124,28 +124,12 @@ header span
 }
 
 #contactbox {
-  color: #333;
-  padding: 20px;
-  width: calc(60% - 40px);
-  float: right;
+  padding: 10px;
 }
 
-#contactbox ul
-{
-  list-style: none;
-  width: 50%;
-  padding: 0;
-  margin: 0;
-}
-
-#contactbox li {
-  height: 20px;
-  line-height: 20px;
-}
-
-#contactbox a
-{
+#contactbox a {
   color: inherit;
+  margin-right: 10px;
 }
 
 #post_container div.post
