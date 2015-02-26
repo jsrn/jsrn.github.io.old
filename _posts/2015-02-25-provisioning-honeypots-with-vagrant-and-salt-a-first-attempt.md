@@ -17,4 +17,4 @@ After spending a while getting to grips with Salt, the final combination of Vagr
 
 The result of the evening's tinkering can be found [here](https://github.com/Slothkrew/HoneyDeploy/tree/master/dionaea), and will be built upon next time when I add VPS provisioning to really get this show on the road.
 
-For posterity, since the files are likely to change a lot: https://gist.github.com/jsrn/dfd1807dc270a8b2dab4
+[gist](https://gist.github.com/jsrn/dfd1807dc270a8b2dab4) for posterity, since the files are likely to change a lot.
