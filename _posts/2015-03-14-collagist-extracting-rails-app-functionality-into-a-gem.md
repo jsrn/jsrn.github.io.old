@@ -15,7 +15,9 @@ I've extracted the functionality to the collagist gem to make everything nice an
 
 It now only does one thing.
 
-https://github.com/jsrn/collagist
-https://rubygems.org/gems/collagist
+<a href="https://github.com/jsrn/collagist">Code</a>.
 
-It may not do it well.
+<a href="https://rubygems.org/gems/collagist">Rubygems page</a>.
+
+
+It may or may not do it well.
