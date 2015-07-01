@@ -12,7 +12,7 @@ I was recently tripped up when I was trying to use the ruby hash value defaults.
 {% highlight ruby %}
 hash = Hash.new(Hash.new({}))
 hash[:foo][:bar] = 1
-# { foo: { bar: 1} }
+# { foo: { bar: 1 } }
 hash[:boo][:baz] = 2
 # { foo: { bar: 1 }, boo: { baz: 2 } }
 {% endhighlight %}
@@ -34,11 +34,11 @@ hash = Hash.new(Hash.new({}))
 hash[:foo][:bar] = 1
 hash[:boo][:baz] = 2
 hash[:foo]
-# {:bar=>1, :baz=>2}
+# { bar: 1, baz: 2}
 hash[:boo]
-# {:bar=>1, :baz=>2}
+# { bar: 1, baz: 2 }
 hash[:noo]
-# {:bar=>1, :baz=>2}
+# { bar: 1, baz: 2 }
 hash.keys
 # => []
 {% endhighlight %}
@@ -65,13 +65,13 @@ In effect, we've hidden data within the hash.
 If you want the behaviour I mentioned in the first place, you have to initialize your hash by passing a block to it.
 
 {% highlight ruby %}
-hash = Hash.new {|hash, key| hash[key] = {} }
+hash = Hash.new { |hash, key| hash[key] = {} }
 hash[:foo][:bar] = 1
 hash
-# => {:foo=>{:bar=>1}}
+# => { foo: { bar: 1 } }
 hash[:boo][:baz] = 2
 hash
-# => {:foo=>{:bar=>1}, :boo=>{:baz=>2}}
+# => {foo: { bar: 1 }, boo: { baz: 2 } }
 hash.keys
 # => [:foo, :boo]
 {% endhighlight %}
