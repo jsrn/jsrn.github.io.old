@@ -9,8 +9,6 @@ tags: [ruby, hash, default]
 
 I was recently tripped up when I was trying to use the ruby hash value defaults. I wanted the default value of my hash to be an empty hash. That way I could do something like the following, without worrying about initializing the hashes:
 
-### The Weird Behaviour
-
 {% highlight ruby %}
 hash = Hash.new(Hash.new({}))
 hash[:foo][:bar] = 1
@@ -64,3 +62,16 @@ hash.keys
 
 In effect, we've hidden data within the hash.
 
+If you want the behaviour I mentioned in the first place, you have to initialize your hash by passing a block to it.
+
+{% highlight ruby %}
+hash = Hash.new {|hash, key| hash[key] = {} }
+hash[:foo][:bar] = 1
+hash
+# => {:foo=>{:bar=>1}}
+hash[:boo][:baz] = 2
+hash
+# => {:foo=>{:bar=>1}, :boo=>{:baz=>2}}
+hash.keys
+# => [:foo, :boo]
+{% endhighlight %}
