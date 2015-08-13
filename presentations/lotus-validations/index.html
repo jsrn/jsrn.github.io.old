@@ -185,6 +185,10 @@ attribute :name, presence: true
 					</code></pre>
 
 					<p>An attribute is valid if present.</p>
+
+					<blockquote>
+						&ldquo;Showing up is 80 percent of life.&rdquo; - Woody Allen
+					</blockquote>
 				</section>
 
 				<section>
@@ -195,7 +199,7 @@ attribute :ssn,      size: 11    # exact match
 attribute :password, size: 8..64 # range
   					</code></pre>
 
-					<p>Yep.</p>
+					<img src="images/size.jpg" alt="" height="300">
 				</section>
 
 				<section>
@@ -208,6 +212,10 @@ attribute :password, size: 8..64 # range
 					<p>Any code-level uniqueness test will be subject to race conditions.</p>
 
 					<p>Might as well just leave it to the database.</p>
+
+					<blockquote cite="https://robots.thoughtbot.com/the-perils-of-uniqueness-validations">
+						&ldquo;Your relational database is designed to enforce data integrity; let it.&rdquo;
+					</blockquote>
 				</section>
 
 				<section>
