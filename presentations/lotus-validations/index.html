@@ -50,10 +50,12 @@
 
 				<section>
 					<h2>What does the gem do?</h2>
-					<ul>
-						<li>Define attributes for an object</li>
-						<li>Ignores unknown values</li>
-					</ul>
+
+					<p>The gem basically does three things:</p>
+				</section>
+
+				<section>
+					<h2>1) Defines an accessor</h2>
 
 					<pre><code data-trim contenteditable>
 require 'lotus/validations'
@@ -64,9 +66,46 @@ class Person
   attribute :name,  presence: true
 end
 
-person = Person.new(name: 'Luca', email: 'me@example.org')
+person = Person.new(name: 'Luca')
 person.name  # => "Luca"
 person.email   # => raises NoMethodError
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>2) Provides #valid?</h2>
+
+					<pre><code data-trim contenteditable>
+class Person
+  include Lotus::Validations
+
+  attribute :fave_food, format: /cake/
+end
+
+person = Person.new(fave_food: 'tears')
+person.valid?
+# => false
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>3) Provides #errors</h2>
+
+					<pre><code data-trim contenteditable>
+person = Person.new(fave_food: 'tears')
+person.valid?
+# => false
+person.errors.inspect
+# => "#&lt;Lotus::Validations::Errors:0x00000001351140 @errors={
+#  :fave_food=&gt;[
+#    #&lt;Lotus::Validations::Error:0x00000001350fd8
+#    @attribute_name=\"fave_food\",
+#    @validation=:format,
+#    @expected=/cake/,
+#    @actual=\"tears\",
+#    @namespace=nil,
+#    @attribute=\"fave_food\"&gt;]
+#  }&gt;"
 					</code></pre>
 				</section>
 
@@ -151,17 +190,17 @@ attribute :password, confirmation: true
 					<h2>Exclusion</h2>
 
 					<pre><code data-trim contenteditable>
-attribute :music, exclusion: ['pop']
+attribute :pleasant_languages, exclusion: ['c', 'prolog']
 					</code></pre>
 
-					<p>Checks whether the attribute "#include?"s the excluded value, and returns false if so.</p>
+					<p>Returns false if the attribute value is `#include?`ed in the exclusion list.</p>
 				</section>
 
 				<section>
 					<h2>Inclusion</h2>
 
 					<pre><code data-trim contenteditable>
-attribute :age,        inclusion: 18..99
+attribute :age, inclusion: 18..99
 					</code></pre>
 
 					<p>The opposite of exclusion.</p>
@@ -210,8 +249,6 @@ attribute :password, size: 8..64 # range
 					<p>This gem doesn't actually support uniqueness validations.</p>
 
 					<p>Any code-level uniqueness test will be subject to race conditions.</p>
-
-					<p>Might as well just leave it to the database.</p>
 
 					<blockquote cite="https://robots.thoughtbot.com/the-perils-of-uniqueness-validations">
 						&ldquo;Your relational database is designed to enforce data integrity; let it.&rdquo;
