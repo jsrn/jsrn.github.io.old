@@ -10,11 +10,11 @@ tags: [triple triad, square enix, iOS]
 tl;dr: It's the Triple Triad you love, you'll just wish the doses were bigger.
 
 <div style="display: block; overflow: hidden;">
-	<img src="images/tt_1.jpg" alt="Opponent Selection" style="width: 200px; float: left; margin-right: 10px;">
+	<img src="/images/tt_1.jpg" alt="Opponent Selection" style="width: 200px; float: left; margin-right: 10px;">
 
-	<img src="images/tt_2.jpg" alt="Deck Composition" style="width: 200px; float: left; margin-right: 10px;">
+	<img src="/images/tt_2.jpg" alt="Deck Composition" style="width: 200px; float: left; margin-right: 10px;">
 
-	<img src="images/tt_3.jpg" alt="Card Album" style="width: 200px; float: left;">
+	<img src="/images/tt_3.jpg" alt="Card Album" style="width: 200px; float: left;">
 </div>
 
 I've recently been whiling away a few minutes of each day playing Square Enix's newly released Triple Triad game on their Final Fantasy Portal app. After defeating all of the main NPC opponents, and finding it difficult to acquire the high rated cards, I turned to google. Whenever I google anything related to the Triple Triad iOS release, the following headline floats close to the top of the results:
