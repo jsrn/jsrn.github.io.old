@@ -1,12 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Georgia', serif;
 }
 
 h1, h2, h3, h4
 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
 }
 
 /* Custom container */
@@ -19,9 +17,14 @@ h1, h2, h3, h4
 
 .navbar
 {
+  font-family: sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
   overflow: hidden;
+}
+
+.navbar .nav li {
+  margin-right: 20px;
 }
 
 .navbar .nav li > a
@@ -93,7 +96,6 @@ h1, h2, h3, h4
 
 header
 {
-  height: 100px;
   width: 100%;
 }
 
